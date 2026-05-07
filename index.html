@@ -43,6 +43,8 @@
 
         html {
             scroll-behavior: smooth;
+            /* Prevents anchor links from being hidden behind sticky header */
+            scroll-padding-top: 100px;
         }
 
         body {
@@ -141,6 +143,18 @@
             color: var(--primary-color);
         }
 
+        /* --- Warning Bar --- */
+        .warning-bar {
+            background-color: #b71c1c; /* Strong Red */
+            color: #ffffff;
+            text-align: center;
+            padding: 8px 15px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            width: 100%;
+        }
+
         /* --- Header & Navigation --- */
         header {
             background-color: var(--white);
@@ -197,6 +211,7 @@
             color: var(--white);
             padding: 120px 0 100px;
             text-align: center;
+            position: relative;
         }
 
         .hero h1 {
@@ -290,6 +305,7 @@
             border-radius: var(--border-radius);
             overflow: hidden;
             transition: var(--transition);
+            background: white; /* Ensure background for anchor visibility */
         }
 
         .service-item:hover {
@@ -427,6 +443,7 @@
             background-color: var(--primary-color);
             color: var(--white);
             text-align: center;
+            position: relative;
         }
 
         .cta-section h2 {
@@ -511,6 +528,11 @@
 </head>
 <body>
 
+    <!-- Warning Bar -->
+    <div class="warning-bar">
+        Click Fraud is a Crime and your ip adress is recorded
+    </div>
+
     <!-- Header -->
     <header>
         <div class="container">
@@ -542,7 +564,9 @@
     </header>
 
     <!-- Hero Section -->
+    <!-- Added #emergency anchor for deep linking -->
     <section id="home" class="hero">
+        <span id="emergency"></span> <!-- Anchor for #emergency link -->
         <div class="container">
             <h1>Reliable Plumbers in Springs, Gauteng</h1>
             <p>24/7 Emergency plumber, Geyser repairs, and Drain Unblocking. Fast response times and honest pricing. Chat with us now.</p>
@@ -595,7 +619,7 @@
             </div>
             <div class="services-grid">
                 <!-- Service 1 -->
-                <div class="service-item">
+                <div class="service-item" id="geyserrepairs">
                     <img src="https://i.imgur.com/nehhahF_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Geyser Installation Springs" class="service-img">
                     <div class="service-content">
                         <h3>Geyser Repairs & Install</h3>
@@ -603,7 +627,7 @@
                     </div>
                 </div>
                 <!-- Service 2 -->
-                <div class="service-item">
+                <div class="service-item" id="burstpipe">
                     <img src="https://i.imgur.com/3tp2xDf_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Leak Detection Springs" class="service-img">
                     <div class="service-content">
                         <h3>Burst Pipe Repairs & Leak Detection</h3>
@@ -611,7 +635,7 @@
                     </div>
                 </div>
                 <!-- Service 3 -->
-                <div class="service-item">
+                <div class="service-item" id="blockeddrain">
                     <img src="https://i.imgur.com/w56sHXy_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Blocked Drains Springs" class="service-img">
                     <div class="service-content">
                         <h3>Blocked Drains</h3>
@@ -727,7 +751,9 @@
     </section>
 
     <!-- CTA / Contact -->
+    <!-- Added #whatsapp anchor for deep linking -->
     <section id="contact" class="cta-section section-padding">
+        <span id="whatsapp"></span> <!-- Anchor for #whatsapp link -->
         <div class="container">
             <h2>Need a Plumber? Chat with us!</h2>
             <p style="margin-bottom: 30px; color: #eee;">Don't let a small leak become a big problem. Contact your Nr 1 Local Plumber in Springs today.</p>
