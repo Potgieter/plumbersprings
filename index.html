@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumber Springs | 24/7 Emergency Plumbing & Repairs</title>
+    <meta name="description" content="Plumber Springs offers fast, affordable 24/7 plumbing services in Springs, Gauteng. Emergency leaks, geyser repairs, and blockages. Call or WhatsApp us now.">
+    <meta name="keywords" content="Plumber Springs, Emergency Plumber Springs, Geyser Replacement, Blocked Drains, blocked drain plumber,  Casseldale Plumber, Strubenvale Plumber, Selcourt Plumber, Petersfield Plumber, Edelweiss Plumber, Local Plumber Springs, Plumber Near Me, Plumber, Plumber In My Area, 24 hour plumber springs, Urgent plumber, Johan Potgieter, +27815295737">
+    <meta name="author" content="Plumber Springs">
+    <meta name="theme-color" content="#0056b3">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- CSS Variables & Reset --- */
+        :root {
+            --primary-color: #0056b3;
+            --primary-dark: #004494;
+            /* WhatsApp Green */
+            --wa-color: #25D366; 
+            --wa-hover: #128C7E;
+            /* Action Orange (secondary) */
+            --accent-color: #ff9900; 
+            --accent-hover: #e68a00;
+            --text-dark: #1a1a1a;
+            --text-light: #555555;
+            --bg-light: #f9fbfd;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --container-width: 1100px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* --- Utility Classes --- */
+        .container {
+            width: 90%;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 28px;
+            font-weight: 600;
+            border-radius: var(--border-radius);
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            font-size: 1rem;
+        }
+
+        /* WhatsApp Specific Button Style */
+        .btn-whatsapp {
+            background-color: var(--wa-color);
+            color: var(--white);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: var(--wa-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--white);
+            color: var(--white);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--primary-color);
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-primary {
+            color: var(--primary-color);
+        }
+
+        /* --- Header & Navigation --- */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px; /* Adjust height to fit nav bar */
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-dark);
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            background: linear-gradient(rgba(0, 30, 60, 0.75), rgba(0, 30, 60, 0.75)), url('https://i.imgur.com/dwp0iRa_d.png?maxwidth=520&shape=thumb&fidelity=high');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 120px 0 100px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* --- Trust Features --- */
+        .features {
+            background-color: var(--bg-light);
+            padding: 40px 0;
+            margin-top: -50px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: #e6f0fa;
+            color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        /* --- Services --- */
+        .services {
+            background-color: var(--white);
+        }
+
+        .section-header {
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        .section-header p {
+            color: var(--text-light);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-item {
+            border: 1px solid #eee;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .service-item:hover {
+            box-shadow: var(--shadow);
+            transform: translateY(-5px);
+            border-color: transparent;
+        }
+
+        .service-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 25px;
+        }
+
+        .service-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        /* --- Local SEO / About --- */
+        .about {
+            background-color: var(--bg-light);
+        }
+
+        .about-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-img {
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .check-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+        }
+
+        .check-icon {
+            color: green;
+            flex-shrink: 0;
+        }
+
+        /* --- Testimonials --- */
+        .testimonials {
+            background-color: var(--white);
+        }
+
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .review-card {
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            position: relative;
+        }
+
+        .stars {
+            color: #ffc107;
+            margin-bottom: 15px;
+        }
+
+        .client-name {
+            margin-top: 15px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--primary-color);
+        }
+
+        /* --- FAQ (Accordion) --- */
+        .faq {
+            background-color: var(--bg-light);
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 15px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        details {
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        summary {
+            font-weight: 600;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        details[open] summary::after {
+            content: '-';
+        }
+
+        details p {
+            margin-top: 15px;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        /* --- CTA Section --- */
+        .cta-section {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            margin-bottom: 15px;
+            color: var(--white);
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #111;
+            color: #ccc;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            word-break: break-all;
+        }
+
+        .copyright {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        /* --- Mobile Responsive --- */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                clip-path: circle(0% at 100% 0);
+                transition: all 0.5s ease-in-out;
+            }
+
+            .nav-links.active {
+                clip-path: circle(150% at 100% 0);
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .about-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#home">
+                        <img src="https://i.imgur.com/cIxrYJd_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Plumber Springs Logo">
+                    </a>
+                </div>
+                <div class="mobile-toggle" id="mobile-menu-btn">
+                    &#9776;
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li>
+                        <!-- WhatsApp Nav Button -->
+                        <a href="https://wa.me/27815295737?text=Hi%20Plumber%20Springs,%20I%20need%20help" class="btn btn-whatsapp">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                            WhatsApp
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Reliable Plumbers in Springs, Gauteng</h1>
+            <p>24/7 Emergency plumber, Geyser repairs, and Drain Unblocking. Fast response times and honest pricing. Chat with us now.</p>
+            <div class="hero-buttons">
+                <!-- Main WhatsApp CTA -->
+                <a href="https://wa.me/27815295737?text=Hi%20Plumber%20Springs,%20I%20would%20like%20a%20quote" class="btn btn-whatsapp">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                    Chat on WhatsApp
+                </a>
+                <a href="tel:+27815295737" class="btn btn-outline">Call 081 529 5737</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <h3>24/7 Emergency</h3>
+                    <p>We are available around the clock for urgent plumbing issues in Springs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3>Reliable Plumber</h3>
+                    <p>Peace of mind knowing we are well known in Springs and Surrounding areas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <h3>Local Plumber</h3>
+                    <p>Proudly serving all areas in Springs, Casseldale, Strubenvale, Edelweiss, Petersfield & EXT, Selcourt, Selection Park, Geduld & East Geduld, Lodeyko & Pollak Park.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Our Plumbing Services</h2>
+                <p>Comprehensive solutions for residential and commercial properties.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-item">
+                    <img src="https://i.imgur.com/nehhahF_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Geyser Installation Springs" class="service-img">
+                    <div class="service-content">
+                        <h3>Geyser Repairs & Install</h3>
+                        <p>Cold showers? We fix and install all major geyser brands. Fast turnaround time to get your hot water back.</p>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-item">
+                    <img src="https://i.imgur.com/3tp2xDf_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Leak Detection Springs" class="service-img">
+                    <div class="service-content">
+                        <h3>Burst Pipe Repairs & Leak Detection</h3>
+                        <p>Burst Pipe or Got a high water bill? We will find hidden leaks without breaking your walls.</p>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-item">
+                    <img src="https://i.imgur.com/w56sHXy_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Blocked Drains Springs" class="service-img">
+                    <div class="service-content">
+                        <h3>Blocked Drains</h3>
+                        <p>Unblocking sinks, toilets, Showers and main sewer lines efficiently. We prevent future blockages too.</p>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-item">
+                    <img src="https://i.imgur.com/Tz5CA9K_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Bathroom Renovation Plumbing" class="service-img">
+                    <div class="service-content">
+                        <h3>Renovations</h3>
+                        <p>Planning a new bathroom or kitchen? We handle all the rough-in and finish plumbing for your project.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 40px;">
+                <a href="https://wa.me/27815295737?text=Hi,%20I%20need%20help%20with%20one%20of%20your%20services" class="btn btn-whatsapp">
+                    Chat with us on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Local SEO Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-text">
+                    <h2 class="text-primary">Your Trusted Local Plumbers in Springs</h2>
+                    <p style="margin-bottom: 20px;">Living in Springs means dealing with specific plumbing challenges. As a Local Plumber in Springs, I understand the local infrastructure better than anyone.</p>
+                    <p style="margin-bottom: 20px;">We are committed to transparency, quality workmanship, and fair pricing. No hidden costs, just honest solutions.</p>
+                    
+                    <ul class="check-list">
+                        <li>
+                            <span class="check-icon">&#10003;</span> Local Plumbers for Fast Service
+                        </li>
+                        <li>
+                            <span class="check-icon">&#10003;</span> No Call Out Fees
+                        </li>
+                        <li>
+                            <span class="check-icon">&#10003;</span> Serving Springs Neighborhoods & Surroundings
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://i.imgur.com/VugNFc7_d.jpeg?maxwidth=520&shape=thumb&fidelity=high" alt="Plumber Team in Springs" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="reviews" class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>What Our Clients Say</h2>
+                <p>Real reviews from happy customers in Springs.</p>
+            </div>
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Fantastic service! My geyser burst at 2 AM and they were at my door within 25 minutes. Highly recommended."</p>
+                    <div class="client-name">- Alex T., Selection Park</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Professional and tidy. They fixed a leak under my sink that another plumber couldn't find. Prices were very fair."</p>
+                    <div class="client-name">- Monique Botes., Strubenvale</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"I called Johan for a complete bathroom renovation. The team was punctual and the work is top quality. Thank you!"</p>
+                    <div class="client-name">- Quinten Van Zyl., Edelweiss</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common plumbing questions.</p>
+            </div>
+            <div class="faq-container" style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <details>
+                        <summary>Do you charge for call-outs in Springs?</summary>
+                        <p>We offer quotes for standard inspections, a standard call-out fee of R500 which is deducted from the final invoice. For emergency call-outs after hours, a standard call-out fee may apply, which is deducted from the final repair cost.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>Are you available on weekends?</summary>
+                        <p>Yes, we operate 24/7, including weekends and public holidays. Plumbing emergencies don't wait, and neither do we.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>How fast can you be at my place?</summary>
+                        <p>Within 60 minutes. Because we work local and dont have to drive from Benoni, Boksburg or Johannesburg Area. Thats why we offer fast response time. If we are busy with a emmergency you are more than welome to send us a WhatsApp with your Name, Surname, Adress, a short message of how we can help you and a Contact Number. Johan will call you within 5 Minutes.</p>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>Which areas do you service?</summary>
+                        <p>Our main focus is in Springs neighborhoods and Industrial areas, but from time to time we service areas in Brakpan, Benoni, Boksburg, Nigel, Heidelberg, and other parts of the East Rand as our Quality of work make us very popular and trusted.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Contact -->
+    <section id="contact" class="cta-section section-padding">
+        <div class="container">
+            <h2>Need a Plumber? Chat with us!</h2>
+            <p style="margin-bottom: 30px; color: #eee;">Don't let a small leak become a big problem. Contact your Nr 1 Local Plumber in Springs today.</p>
+            <a href="https://wa.me/27815295737?text=Hi%20Johan,%20I%20need%20a%20plumber," class="btn btn-whatsapp" style="background: white; color: var(--wa-color); font-size: 1.2rem; padding: 15px 40px;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                WhatsApp Us Now
+            </a>
+            <div style="margin-top: 20px;">
+                <p style="font-size: 0.9rem; opacity: 0.8;">or email us at <a href="mailto:yournr1localplumber@gmail.com" style="color:white; text-decoration: underline;">yournr1localplumber@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Plumber Springs</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.6;">
+                        Providing top-tier residential and commercial plumbing services in Springs, Gauteng. Quality workmanship guaranteed.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Leak Detection</li>
+                        <li>Geyser Repairs</li>
+                        <li>Blocked Drains</li>
+                        <li>General Maintenance</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            081 529 5737
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            yournr1localplumber@gmail.com
+                        </li>
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Springs, Gauteng, 1559
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Plumber Springs. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Minimal Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
